@@ -14,6 +14,7 @@ class Song
   # 3. Create a class variable, @@count. We will use this variable to keep track of the number of new songs that are created from the Song class. Set this variable equal to 0.
   
   @@count = 0
+  @@genre_count = 0
   @@artists = []
   
   # 7. You'll need a class variable, let's call it @@genres, that is equal to an empty array.
@@ -34,7 +35,8 @@ class Song
    @@artists << artist
    @@genres << genre
    
-   @genre_count += 1
+   @@genre_count += 1
+   
  end
  
  # 9. Write a class method, .artists, that returns an array of all of the artists of the existing songs. This array should only contain unique artists––no repeats! Once again think about what you need to do to implement this behavior.
