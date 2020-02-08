@@ -33,6 +33,8 @@ class Song
    @@count += 1
    @@artists << artist
    @@genres << genre
+   
+   @genre_count += 1
  end
  
  # 9. Write a class method, .artists, that returns an array of all of the artists of the existing songs. This array should only contain unique artists––no repeats! Once again think about what you need to do to implement this behavior.
