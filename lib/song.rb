@@ -24,6 +24,9 @@ class Song
    @@artists << artist
    @@genres << genre
    @@count += 1
+ end
+ 
+ def initialize
    @@genre_count += 1
  end
  
